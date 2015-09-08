@@ -9,6 +9,10 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 * Avoid unnecessary dependencies.
 * Simple basic deployment script to SSH into a server and run a git pull.
 * ES2015
+* Webpack
+* Alt Flux
+
+### Future goals
 * Unit tests
 * Feature tests
 
