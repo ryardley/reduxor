@@ -1,13 +1,17 @@
 import express from 'express';
-const app = express();
+import config from 'config';
 
-app.get('/', function (req, res) {
-  res.send('Hello World!');
-});
+export default function server () {
+  const app = express();
 
-const server = app.listen(3000, function () {
-  const host = server.address().address;
-  const port = server.address().port;
+  app.get('/', function (req, res) {
+    res.send('Hello World!');
+  });
 
-  console.log('Example app listening at http://%s:%s', host, port);
-});
+  const server = app.listen(config().port, function () {
+    const name = config().description;
+    let {host, port} = server.address();
+    host = host === '::' ? 'localhost' : host || 'localhost';
+    console.log('%s listening at http://%s:%s', name, host, port);
+  });
+}

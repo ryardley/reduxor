@@ -1,7 +1,9 @@
-var p = require('../package.json');
+import p from '../package.json';
 
-module.exports = {
-  name: p.name,
-  longName: p.description,
-  port: process.env.PORT || 3000
-};
+export default function config () {
+  return {
+    name: p.name,
+    description: p.description,
+    port: process.env.PORT || 3000
+  };
+}
