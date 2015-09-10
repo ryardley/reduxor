@@ -6,8 +6,7 @@
   "scripts": {
     "start": "./scripts/start",
     "clean": "./scripts/clean",
-    "build": "./scripts/build",
-    "start-dev": "./scripts/start-dev"
+    "build": "./scripts/build"
   },
   "author": "Rudi Yardley",
   "license": "MIT",

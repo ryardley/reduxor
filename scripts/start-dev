@@ -1,3 +1,0 @@
-#!/bin/bash
-
-./node_modules/.bin/nodemon --exec ./node_modules/.bin/babel-node ./src/index.js & webpack-dev-server --config ./config/webpack.config.js

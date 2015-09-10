@@ -8,7 +8,7 @@ module.exports = {
   context: path.resolve(loc, 'src'),
   entry: './client',
   output: {
-    path: path.resolve(loc, 'srv'),
+    path: path.resolve(loc, 'srv', 'bundles'),
     filename: 'client.js'
   },
   module: {

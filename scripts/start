@@ -1,3 +1,14 @@
 #!/bin/bash
+startProd(){
+  node ./srv/index.js
+}
 
-node ./srv/index.js
+startDev(){
+  ./node_modules/.bin/nodemon --exec ./node_modules/.bin/babel-node ./src/index.js & webpack-dev-server --config ./config/webpack.config.js
+}
+
+case "$NODE_ENV" in
+  production) startProd;;
+  *) startDev
+esac
+
