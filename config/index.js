@@ -8,6 +8,6 @@ module.exports = function config () {
     name: p.name,
     description: p.description,
     port: process.env.PORT || 3000,
-    assetPort: process.env.ASSET_HOST || 8080
+    assetHost: process.env.ASSET_HOST || 'http://localhost:8080'
   };
 };
