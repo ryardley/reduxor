@@ -1,10 +1,15 @@
+var path = require('path');
+
+var loc = path.resolve(__dirname, '..');
 module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
-  entry: './client/index.js',
+  context: path.resolve(loc, 'src'),
+  entry: './client',
   output: {
-    filename: '[name].js'
+    path: path.resolve(loc, 'srv'),
+    filename: 'client.js'
   },
   module: {
     loaders: [
