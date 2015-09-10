@@ -14,4 +14,5 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 ### Future goals
 * Unit tests
 * Feature tests
+* React Hot Loading
 
