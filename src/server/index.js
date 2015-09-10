@@ -1,17 +1,17 @@
-import express from 'express';
-import config from 'config';
+'use strict';
 
-export default function server () {
+import config from 'config';
+import express from 'express';
+import isomorpher from './middleware/isomorpher';
+
+export default function serve () {
   const app = express();
 
-  app.get('/', function (req, res) {
-    res.send('Hello World!');
-  });
+  app.use(isomorpher);
 
   const server = app.listen(config().port, function () {
-    const name = config().description;
     let {host, port} = server.address();
     host = host === '::' ? 'localhost' : host || 'localhost';
-    console.log('%s listening at http://%s:%s', name, host, port);
+    console.log('%s listening at http://%s:%s', config().description, host, port);
   });
 }

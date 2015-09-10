@@ -1,4 +1,5 @@
 .env
 /srv
+/.srv
 /node_modules
 npm-debug.log

@@ -5,7 +5,7 @@ link_packages(){
 }
 
 start_prod(){
-  node ./srv/index.js
+  node ./.srv/index.js
 }
 
 start_dev(){
