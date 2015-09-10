@@ -1,9 +1,11 @@
-import p from '../package.json';
+// Must be ES5
 
-export default function config () {
+var p = require('../package.json');
+
+module.exports = function config () {
   return {
     name: p.name,
     description: p.description,
     port: process.env.PORT || 3000
   };
-}
+};

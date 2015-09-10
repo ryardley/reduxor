@@ -1,3 +1,5 @@
+// Must be ES5
+
 var path = require('path');
 
 var loc = path.resolve(__dirname, '..');
