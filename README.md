@@ -46,7 +46,7 @@ The start in production mode
 
 ```bash
 # First build the source
-$ npm build
+$ npm run build
 
 # Then start with NODE_ENV set to production
 $ NODE_ENV=production npm start
