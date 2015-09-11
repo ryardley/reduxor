@@ -31,7 +31,6 @@ The start in development mode
 $ npm start
 ```
 
-<<<<<<< HEAD
 ## To deploy
 The start in production mode
 
