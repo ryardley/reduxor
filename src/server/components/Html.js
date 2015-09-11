@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import config from 'config';
+import config from 'app/config';
 export default class Html extends React.Component {
   static propTypes = {
     markup: React.PropTypes.string,

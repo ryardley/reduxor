@@ -1,16 +1,15 @@
-// Must be ES5
+// Must be ES5 as we pull in the config via the commandline
 
 var path = require('path');
 
-var loc = path.resolve(__dirname, '..');
 module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
-  context: path.resolve(loc, 'src'),
+  context: path.resolve(__dirname, 'src'),
   entry: './client',
   output: {
-    path: path.resolve(loc, '.srv', 'bundles'),
+    path: path.resolve(__dirname, '.srv', 'bundles'),
     filename: 'client.js'
   },
   module: {
