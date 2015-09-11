@@ -21,7 +21,7 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 Clone the repository
 
 ```
-git clone https://github.com/ryardley/isomorphic-react
+git clone https://github.com/ryardley/reactomorph
 ```
 
 Install dependencies
