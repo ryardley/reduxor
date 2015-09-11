@@ -1,19 +1,22 @@
 {
-  "name": "isoreact",
+  "name": "isomorphic-react",
   "version": "1.0.0",
   "description": "Isomorphic React Template",
-  "main": "index.js",
+  "repository": "https://github.com/ryardley/isomorphic-react",
   "scripts": {
-    "start": "./scripts/start",
-    "clean": "./scripts/clean",
-    "build": "./scripts/build"
+    "start": "./scripts/start.sh",
+    "clean": "./scripts/clean.sh",
+    "build": "./scripts/build.sh"
   },
   "author": "Rudi Yardley",
   "license": "MIT",
   "dependencies": {
+    "alt": "^0.17.3",
     "babel-runtime": "^5.8.20",
     "dotenv": "^1.2.0",
     "express": "^4.13.3",
+    "iso": "^4.2.0",
+    "jade": "^1.11.0",
     "link-package": "^0.1.0",
     "react": "^0.13.3",
     "react-router": "^0.13.3"
