@@ -25,23 +25,24 @@ git clone https://github.com/ryardley/isomorphic-react
 ```
 
 Install dependencies
-```
-npm i
+```bash
+$ npm i
 ```
 
 The start in development mode
 
-```
-npm start
+```bash
+$ npm start
 ```
 
-Then shoot over to http://localhost:3000 to be amazed at the awesomeness.
+Then shoot over to http://localhost:3000/ to be amazed at the awesomeness.
 
 ## Environment vars
 
 To customise your environment create a .env file to provide some simple environment information.
 
-```
+```bash
+# .env
 PORT=3181
 ASSET_HOST=http://localhost:8080
 ```
