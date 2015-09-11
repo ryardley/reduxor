@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-
+import config from 'config';
 export default class Html extends React.Component {
   static propTypes = {
     markup: React.PropTypes.string,
@@ -16,7 +16,7 @@ export default class Html extends React.Component {
         </head>
         <body>
           <div id='app' dangerouslySetInnerHTML={{__html: this.props.markup}}></div>
-          <script src='http://localhost:8080/client.js'></script>
+          <script src={config().assetHost + '/client.js'}></script>
         </body>
       </html>
     );
