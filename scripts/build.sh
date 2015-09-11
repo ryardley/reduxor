@@ -1,5 +1,5 @@
 #!/bin/bash
 
 ./scripts/clean
-./node_modules/.bin/babel ./src --out-dir ./.srv
+./node_modules/.bin/babel ./app --out-dir ./.srv
 webpack

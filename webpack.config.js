@@ -6,7 +6,7 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
-  context: path.resolve(__dirname, 'src'),
+  context: path.resolve(__dirname, 'app'),
   entry: './client',
   output: {
     path: path.resolve(__dirname, '.srv', 'bundles'),
