@@ -31,7 +31,9 @@ The start in development mode
 $ npm start
 ```
 
-## To deploy
+Then shoot over to [http://localhost:3000/](http://localhost:3000/) to be amazed at the awesomeness.
+
+## To run in production
 The start in production mode
 
 ```bash
@@ -41,8 +43,6 @@ $ npm build
 # Then start with NODE_ENV set to production
 $ NODE_ENV=production npm start
 ```
-
-Then shoot over to [http://localhost:3000/](http://localhost:3000/) to be amazed at the awesomeness.
 
 ## Environment vars
 
