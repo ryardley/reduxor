@@ -1,4 +1,4 @@
-# Isomorphic React
+# Reactomorph
 
 Isomorphic React starting package cause the rest of them suck and I wanted to make my own. This very basic right now and is a work in progress. You might want to look at it for inspiration but there are other more developed solutions.
 
