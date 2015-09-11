@@ -35,7 +35,7 @@ The start in development mode
 $ npm start
 ```
 
-Then shoot over to http://localhost:3000/ to be amazed at the awesomeness.
+Then shoot over to [http://localhost:3000/](http://localhost:3000/) to be amazed at the awesomeness.
 
 ## Environment vars
 
