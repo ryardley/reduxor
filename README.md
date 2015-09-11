@@ -3,7 +3,7 @@
 Isomorphic React starting package cause the rest of them suck and I wanted to make my own.
 
 ### Primary Goals
-* Clearly defined easy to follow file structure.
+* Pay careful attention to create a clearly defined easy to follow file structure.
 * Isomorphicize as much as practical.
 * Plays nicely as a 12 Factor app. http://12factor.net/
 * Avoid unnecessary global dependencies especially for deployment. _(ie. favour using local .bin, avoid gulp)_
