@@ -6,7 +6,6 @@ import routes from '../../shared/routes';
 import alt from '../../alt';
 import Html from '../components/Html';
 import Iso from 'iso';
-import config from 'config';
 import DocumentTitle from 'react-document-title';
 
 export default function isomorpher(req, res) {
