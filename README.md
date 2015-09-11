@@ -8,14 +8,22 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 * Isomorphicize as much as practical.
 * Plays nicely as a 12 Factor app. http://12factor.net/
 * Avoid unnecessary global dependencies especially for deployment. _(ie. favour using local .bin, avoid gulp)_
-* Must be low volume production ready launchable via npm start for upstart.
-* ES2015 as much as practical
+* Should be low volume production ready launchable via npm start for upstart.
+* Everything should be consistantly babeled.
+
+### TODO
+- [ ] Execute all latent fetch requests through alt before server rendering.
+- [ ] Incorporate [fetchr](https://github.com/yahoo/fetchr).
+- [ ] Minification.
+- [ ] Assets / Gzip.
+- [ ] CSS Modules.
+- [ ] Cache server rendered pages in memory.
 
 ### Future goals
-* Unit tests
-* Feature tests
-* React Hot Loading
-* Simple basic deployment script to SSH into a server and run a git pull.
+- [ ] Unit tests
+- [ ] Feature tests
+- [ ] React Hot Loading
+- [ ] Simple basic deployment script to SSH into a server and run a git pull.
 
 ## To setup
 
