@@ -1,6 +1,6 @@
 # Isomorphic React
 
-Isomorphic React starting package cause the rest of them suck and I wanted to make my own.
+Isomorphic React starting package cause the rest of them suck and I wanted to make my own. This very basic right now and is a work in progress. You might want to look at it for inspiration but there are other more developed solutions.
 
 ### Primary Goals
 * Clearly defined easy to follow file structure.
