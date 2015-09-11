@@ -1,8 +1,8 @@
 {
-  "name": "isomorphic-react",
+  "name": "reactomorph",
   "version": "1.0.0",
   "description": "Isomorphic React Template",
-  "repository": "https://github.com/ryardley/isomorphic-react",
+  "repository": "https://github.com/ryardley/reactomorph",
   "scripts": {
     "start": "./scripts/start.sh",
     "clean": "./scripts/clean.sh",
