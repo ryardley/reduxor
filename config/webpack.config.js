@@ -15,13 +15,13 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.css$/, loader: 'style!css' },
+      {test: /\.css$/, loader: 'style!css'},
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader: require.resolve('babel-loader')
       },
-      { test: /\.json$/, loader: 'json-loader'}
+      {test: /\.json$/, loader: 'json-loader'}
     ]
   },
   stats: {

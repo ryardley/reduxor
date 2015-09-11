@@ -10,9 +10,9 @@ import DocumentTitle from 'react-document-title';
 
 export default function isomorpher(req, res) {
   const iso = new Iso();
-  Router.run(routes, req.url, function (Handler) {
+  Router.run(routes, req.url, function (Root) {
     iso.add(
-      React.renderToString(React.createElement(Handler)),
+      React.renderToString(<Root />),
       alt.flush()
     );
 

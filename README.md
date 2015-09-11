@@ -16,23 +16,28 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 * React Hot Loading
 * Simple basic deployment script to SSH into a server and run a git pull.
 
-## Get Up and Running
-
-Clone the repository
-
-```
-git clone https://github.com/ryardley/isomorphic-react
-```
-
+## To setup
 Install dependencies
 ```bash
 $ npm i
 ```
 
+## To run
 The start in development mode
 
 ```bash
 $ npm start
+```
+
+## To deploy
+The start in production mode
+
+```bash
+# First build the source
+$ npm build
+
+# Then start with NODE_ENV set to production
+$ NODE_ENV=production npm start
 ```
 
 Then shoot over to http://localhost:3000/ to be amazed at the awesomeness.
