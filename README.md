@@ -12,7 +12,7 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 * Everything should be consistantly babeled.
 
 ### TODO
-- [ ] Execute all latent fetch requests through alt before server rendering.
+- [ ] Execute all latent dispatch requests before server rendering.
 - [ ] Incorporate [fetchr](https://github.com/yahoo/fetchr).
 - [ ] Minification.
 - [ ] Assets / Gzip.
