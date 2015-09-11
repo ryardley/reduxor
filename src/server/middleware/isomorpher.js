@@ -6,20 +6,21 @@ import routes from '../../shared/routes';
 import alt from '../../alt';
 import Html from '../components/Html';
 import Iso from 'iso';
+import config from 'config';
 
 export default function isomorpher(req, res) {
-
   const iso = new Iso();
-
   Router.run(routes, req.url, function (Handler) {
-
-    const content = React.renderToString(React.createElement(Handler));
-    iso.add(content, alt.flush());
-    const component = React.createFactory(Html)({markup: iso.render(), title: 'Foo'});
-    const staticMarkup = React.renderToStaticMarkup(component);
-    res.send(staticMarkup);
+    iso.add(
+      React.renderToString(React.createElement(Handler)),
+      alt.flush()
+    );
+    res.send(
+      React.renderToStaticMarkup(
+        React.createFactory(Html)({markup: iso.render(), title: config().description})
+      )
+    );
   });
-
 }
 
 
