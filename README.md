@@ -16,7 +16,7 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 * React Hot Loading
 * Simple basic deployment script to SSH into a server and run a git pull.
 
-## To run this
+## Get Up and Running
 
 Clone the repository
 
@@ -35,3 +35,15 @@ The start in development mode
 npm start
 ```
 
+Then shoot over to http://localhost:3000 to be amazed at the awesomeness.
+
+## Environment vars
+
+To customise your environment create a .env file to provide some simple environment information.
+
+```
+PORT=3181
+ASSET_HOST=http://localhost:8080
+```
+
+Here we are setting the development port to run on 3181 and the location of the transpiled assets to be http://localhost:8080 (webpack-dev-server defaults)
