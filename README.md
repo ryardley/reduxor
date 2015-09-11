@@ -1,9 +1,10 @@
+
 # Reactomorph
 
-Isomorphic React starting package cause the rest of them suck and I wanted to make my own. This very basic right now and is a work in progress. You might want to look at it for inspiration but there are other more developed solutions.
+Isomorphic React starting package cause the rest of them suck and I wanted to make my own.
 
 ### Primary Goals
-* Clearly defined easy to follow file structure.
+* Pay careful attention to create a clearly defined easy to follow file structure.
 * Isomorphicize as much as practical.
 * Plays nicely as a 12 Factor app. http://12factor.net/
 * Avoid unnecessary global dependencies especially for deployment. _(ie. favour using local .bin, avoid gulp)_
@@ -17,6 +18,7 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 * Simple basic deployment script to SSH into a server and run a git pull.
 
 ## To setup
+
 Install dependencies
 ```bash
 $ npm i
@@ -29,6 +31,7 @@ The start in development mode
 $ npm start
 ```
 
+<<<<<<< HEAD
 ## To deploy
 The start in production mode
 
@@ -40,7 +43,7 @@ $ npm build
 $ NODE_ENV=production npm start
 ```
 
-Then shoot over to http://localhost:3000/ to be amazed at the awesomeness.
+Then shoot over to [http://localhost:3000/](http://localhost:3000/) to be amazed at the awesomeness.
 
 ## Environment vars
 
