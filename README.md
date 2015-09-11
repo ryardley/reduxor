@@ -15,7 +15,7 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 - [ ] Execute all latent dispatch requests before server rendering.
 - [ ] Incorporate [fetchr](https://github.com/yahoo/fetchr) so we have a uniform interface for fetching server data.
 - [ ] Minification.
-- [ ] Assets / Gzip.
+- [ ] Assets / Gzip / Fingerprinting.
 - [ ] CSS Modules.
 - [ ] Cache server rendered pages in memory.
 
