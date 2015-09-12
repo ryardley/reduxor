@@ -1,3 +1,5 @@
+'use strict';
+
 import {RECEIVE_FOLLOWERS} from '../actions';
 
 export default function followers(state = [], action) {

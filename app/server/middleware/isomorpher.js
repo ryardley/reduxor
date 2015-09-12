@@ -7,14 +7,7 @@ import DocumentTitle from 'react-document-title';
 import routes from '../../shared/router/routes';
 import {RoutingContext, match} from 'react-router';
 import store from '../../shared/store';
-import {fetchFollowers} from '../../shared/actions';
 import {Provider} from 'react-redux';
-
-
-function renderPage(props){
-
-  return
-}
 
 export default function isomorpher(req, res) {
 
@@ -29,30 +22,28 @@ export default function isomorpher(req, res) {
     } else if (renderProps == null) {
       res.send(404, 'Not found');
     } else {
-      const model = (
-        <Provider store={store}>
-          {() => <RoutingContext {...renderProps} />}
-        </Provider>
-      );
-      const unsubscribe = store.subscribe(() => {
-        if(store.getState().isLoading) return;
-        setTimeout(function(){
-          res.send(
-            React.renderToStaticMarkup(
-              React.createFactory(Html)({
-                markup:  React.renderToString(model),
-                title: DocumentTitle.rewind()
-              })
-            )
-          );
-        }, 100);
-        unsubscribe();
+
+      const wrappers = renderProps.components;
+      const withFetch = wrappers.filter((w) => w.WrappedComponent && w.WrappedComponent.fetchTransitionData);
+      const promises = withFetch
+                        .map((w) => w.WrappedComponent)
+                        .map((Component) => Component.fetchTransitionData());
+
+      Promise.all(promises).then(()=>{
+        res.send(
+          React.renderToStaticMarkup(
+            React.createFactory(Html)({
+              markup: React.renderToString(
+                <Provider store={store}>
+                  {() => <RoutingContext {...renderProps} />}
+                </Provider>
+              ),
+              state: 'window.__THIS_IS_MESSY_BUT_IT_WORKS=' + JSON.stringify(store.getState()),
+              title: DocumentTitle.rewind()
+            })
+          )
+        );
       });
-
-      // TODO: This sucks we have to know about the page event that needs to be launched
-      // store.dispatch(fetchFollowers());
-      React.renderToString(model);
-
     }
   });
 

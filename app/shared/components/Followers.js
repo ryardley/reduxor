@@ -9,9 +9,11 @@ import {connect} from 'react-redux';
 @connect((state) => ({followers: state.followers}))
 export default class Followers extends React.Component {
 
-  constructor(props) {
-    super(props);
-    store.dispatch(fetchFollowers());
+  static fetchTransitionData() {
+    return store.dispatch(fetchFollowers());
+  }
+  componentDidMount(){
+    this.constructor.fetchTransitionData();
   }
 
   renderFollower(follower, index) {
