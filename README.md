@@ -12,7 +12,7 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 * Everything should be the same version of ES201x
 
 ### TODO
-- [ ] ~Execute all latent dispatch requests before server rendering.~
+- [ ] ~~Execute all latent dispatch requests before server rendering.~~
 - [ ] Refactor to Redux to solve isomorphic problems
 - [ ] Minification.
 - [ ] Assets / Gzip.
