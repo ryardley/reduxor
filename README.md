@@ -1,6 +1,6 @@
 # Reduxomorph
 
-__A Redux/React Isomorphic Starter for Mortals__
+__A React Router ready, Redux & React Isomorphic starting template for mortals.__
 
 Isomorphic React starting package cause the rest of them suck and I wanted to make my own with the latest packages.
 
