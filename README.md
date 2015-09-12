@@ -1,6 +1,6 @@
-# Reactomorph
+# Redux React Isomorphic Template
 
-Isomorphic React starting package cause the rest of them suck and I wanted to make my own.
+Isomorphic React starting package cause the rest of them suck and I wanted to make my own with the latest packages.
 
 ### Technology
 * Redux v2.0
