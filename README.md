@@ -22,6 +22,7 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 
 ### TODO
 - [x] Refactor to Redux
+- [x] Isomorphic Rendering with a service
 - [ ] Encapsulate Hydration
 - [ ] CSS Modules.
 - [ ] Make pretty / Add content about Redux (any suggestions?)
