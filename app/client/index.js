@@ -1,16 +1,15 @@
 'use strict';
 
 import React from 'react';
-import Router from 'react-router';
-import routes from '../shared/routes';
-import Iso from 'iso';
-import alt from '../alt';
+import RouterWrapper from '../shared/router';
+import createBrowserHistory from 'history/lib/createBrowserHistory';
 
-Iso.bootstrap(function (state, _, container) {
-  alt.bootstrap(state);
+import store from '../shared/store';
+import {Provider} from 'react-redux';
 
-  Router.run(routes, Router.HistoryLocation, function (Handler) {
-    const node = React.createElement(Handler);
-    React.render(node, container);
-  });
-});
+React.render(
+  <Provider store={store}>
+    {() => <RouterWrapper history={createBrowserHistory()}/>}
+  </Provider>,
+  document.getElementById('app')
+);

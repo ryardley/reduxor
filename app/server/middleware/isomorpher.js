@@ -1,27 +1,52 @@
 'use strict';
 
 import React from 'react';
-import Router from 'react-router';
-import routes from '../../shared/routes';
-import alt from '../../alt';
 import Html from '../components/Html';
-import Iso from 'iso';
+import createLocation from 'history/lib/createLocation';
 import DocumentTitle from 'react-document-title';
+import routes from '../../shared/router/routes';
+import {RoutingContext, match} from 'react-router';
+import store from '../../shared/store';
+import {Provider} from 'react-redux';
 
 export default function isomorpher(req, res) {
-  const iso = new Iso();
-  Router.run(routes, req.url, function (Root) {
-    iso.add(
-      React.renderToString(<Root />),
-      alt.flush()
-    );
 
-    res.send(
-      React.renderToStaticMarkup(
-        React.createFactory(Html)({markup: iso.render(), title: DocumentTitle.rewind()})
-      )
-    );
+  let location = createLocation(req.url);
+
+  match({routes, location}, (error, redirectLocation, renderProps) => {
+
+    if (redirectLocation) {
+      res.redirect(301, redirectLocation.pathname + redirectLocation.search);
+    } else if (error) {
+      res.send(500, error.message);
+    } else if (renderProps == null) {
+      res.send(404, 'Not found');
+    } else {
+
+      const wrappers = renderProps.components;
+      const withFetch = wrappers.filter((w) => w.WrappedComponent && w.WrappedComponent.fetchTransitionData);
+      const promises = withFetch
+                        .map((w) => w.WrappedComponent)
+                        .map((Component) => Component.fetchTransitionData());
+
+      Promise.all(promises).then(()=>{
+        res.send(
+          React.renderToStaticMarkup(
+            React.createFactory(Html)({
+              markup: React.renderToString(
+                <Provider store={store}>
+                  {() => <RoutingContext {...renderProps} />}
+                </Provider>
+              ),
+              state: 'window.__THIS_IS_MESSY_BUT_IT_WORKS=' + JSON.stringify(store.getState()),
+              title: DocumentTitle.rewind()
+            })
+          )
+        );
+      });
+    }
   });
+
 }
 
 
