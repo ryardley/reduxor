@@ -1,6 +1,3 @@
-_Nothing to see here as of yet. Working on the Redux implementation. Best look elsewhere_
-
-
 # Reactomorph
 
 Isomorphic React starting package cause the rest of them suck and I wanted to make my own.
