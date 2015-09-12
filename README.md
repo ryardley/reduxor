@@ -22,7 +22,7 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 
 ### TODO
 - [x] Refactor to Redux
-- [ ] Make pretty
+- [ ] Make pretty / Add content about Redux (any suggestions?)
 - [ ] React Hot Loading
 - [ ] Redux Dev Tools
 - [ ] Minification.
