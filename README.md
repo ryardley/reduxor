@@ -1,4 +1,4 @@
-# Reduxomorph
+# Redux-o-morph
 
 __A React Router ready, Redux & React Isomorphic starting template for mortals.__
 
