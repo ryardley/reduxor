@@ -28,9 +28,9 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 - [ ] Unit tests
 - [ ] Feature tests
 - [ ] CSS Modules.
-- [ ] Service Proxying with [fetchr](https://github.com/yahoo/fetchr).
+- [ ] Service Proxying
 - [ ] React Hot Loading
-- [ ] React Dev Tools
+- [ ] Redux Dev Tools
 - [ ] Simple basic deployment script to SSH into a server and run a git pull.
 
 ## To setup
