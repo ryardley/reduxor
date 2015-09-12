@@ -13,6 +13,7 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 * Babel v5.8.23
 
 ### Primary Goals
+* Get the latest packages on npm playing nicely.
 * Pay careful attention to create a clearly defined easy to follow file structure.
 * Isomorphicize as much as practical.
 * Plays nicely as a 12 Factor app. http://12factor.net/
