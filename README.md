@@ -20,6 +20,8 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 
 ### TODO
 - [x] Refactor to Redux to solve isomorphic problems
+- [ ] React Hot Loading
+- [ ] Redux Dev Tools
 - [ ] Minification.
 - [ ] Assets / Gzip.
 - [ ] Cache server rendered pages in memory.
@@ -29,8 +31,6 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 - [ ] Feature tests
 - [ ] CSS Modules.
 - [ ] Service Proxying
-- [ ] React Hot Loading
-- [ ] Redux Dev Tools
 - [ ] Simple basic deployment script to SSH into a server and run a git pull.
 
 ## To setup
