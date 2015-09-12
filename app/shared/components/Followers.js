@@ -2,26 +2,19 @@
 
 import React from 'react';
 import DocumentTitle from 'react-document-title';
-import connectToStores from 'alt/utils/connectToStores';
-import FollowersStore from '../stores/FollowersStore';
-import FollowersActions from '../actions/FollowersActions';
+import {fetchFollowers} from '../actions';
+import store from '../store';
+import {connect} from 'react-redux';
 
-@connectToStores
+@connect((state) => ({followers: state.followers}))
 export default class Followers extends React.Component {
 
-  static componentDidConnect () {
-    FollowersActions.fetchFollowers();
+  constructor(props) {
+    super(props);
+    store.dispatch(fetchFollowers());
   }
 
-  static getStores() {
-    return [FollowersStore];
-  }
-
-  static getPropsFromStores() {
-    return FollowersStore.getState();
-  }
-
-  renderFollower (follower, index) {
+  renderFollower(follower, index) {
     return (
       <li key={index}>{follower}</li>
     );

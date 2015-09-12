@@ -15,7 +15,7 @@ export default class Html extends React.Component {
           <title>{this.props.title}</title>
         </head>
         <body>
-          <div id='app' dangerouslySetInnerHTML={{__html: this.props.markup}}></div>
+          <div id='app'></div>
           <script src={config().assetHost + '/client.js'}></script>
         </body>
       </html>
