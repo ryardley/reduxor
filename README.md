@@ -1,9 +1,16 @@
-_Nothing to see here as of yet. Working on the Redux implementation. Best look elsewhere_
+# Redux-o-morph
 
+__A React Router ready, Redux & React Isomorphic starting template for mortals.__
 
-# Reactomorph
+Isomorphic React starting package cause the rest of them suck and I wanted to make my own with the latest packages.
 
-Isomorphic React starting package cause the rest of them suck and I wanted to make my own.
+### Technology
+* Redux v2.0
+* React v0.13.0
+* React Router v1.0.0-rc1
+* Express v4.13.3
+* Webpack v1.12.1
+* Babel v5.8.23
 
 ### Primary Goals
 * Pay careful attention to create a clearly defined easy to follow file structure.
@@ -11,21 +18,23 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 * Plays nicely as a 12 Factor app. http://12factor.net/
 * Avoid unnecessary global dependencies especially for deployment. _(ie. favour using local .bin, avoid gulp)_
 * Should be low volume production ready launchable via npm start for upstart.
-* Everything should be the same version of ES201x
+* Everything should be the same version of ES whatever.
 
 ### TODO
-- [ ] ~~Execute all latent dispatch requests before server rendering.~~
-- [ ] Refactor to Redux to solve isomorphic problems
+- [x] Refactor to Redux to solve isomorphic problems
+- [ ] Make pretty
+- [ ] React Hot Loading
+- [ ] Redux Dev Tools
 - [ ] Minification.
 - [ ] Assets / Gzip.
 - [ ] Cache server rendered pages in memory.
 
 ### Future goals
+- [ ] Upgrade to React v0.14
 - [ ] Unit tests
 - [ ] Feature tests
 - [ ] CSS Modules.
-- [ ] Service Proxying with [fetchr](https://github.com/yahoo/fetchr).
-- [ ] React Hot Loading
+- [ ] Service Proxying
 - [ ] Simple basic deployment script to SSH into a server and run a git pull.
 
 ## To setup

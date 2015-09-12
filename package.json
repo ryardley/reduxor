@@ -1,7 +1,7 @@
 {
-  "name": "reactomorph",
+  "name": "redux-o-morph",
   "version": "1.0.0",
-  "description": "Isomorphic React Template",
+  "description": "Redux-o-morph",
   "repository": "https://github.com/ryardley/reactomorph",
   "scripts": {
     "start": "./scripts/start.sh",
