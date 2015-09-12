@@ -30,6 +30,7 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 - [ ] Cache server rendered pages in memory.
 
 ### Future goals
+- [ ] Upgrade to React v0.14
 - [ ] Unit tests
 - [ ] Feature tests
 - [ ] CSS Modules.
