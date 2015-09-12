@@ -1,6 +1,6 @@
 # Reduxomorph
 
-__A Redux React Isomorphic Template__
+_A Redux React Isomorphic Template_
 
 Isomorphic React starting package cause the rest of them suck and I wanted to make my own with the latest packages.
 
