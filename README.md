@@ -18,7 +18,7 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 * Plays nicely as a 12 Factor app. http://12factor.net/
 * Avoid unnecessary global dependencies especially for deployment. _(ie. favour using local .bin, avoid gulp)_
 * Should be low volume production ready launchable via npm start for upstart.
-* Everything should be the same version of ES_WAT?_.
+* Everything should be the same version of ES _WAT?_.
 
 ### TODO
 - [x] Refactor to Redux to solve isomorphic problems
