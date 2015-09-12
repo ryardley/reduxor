@@ -21,7 +21,7 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 * Everything should be the same version of ES$#%@.
 
 ### TODO
-- [x] Refactor to Redux to solve isomorphic problems
+- [x] Refactor to Redux
 - [ ] Make pretty
 - [ ] React Hot Loading
 - [ ] Redux Dev Tools
