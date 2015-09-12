@@ -5,10 +5,10 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 ### Technology
 * Redux v2.0
 * React v0.13.0
-* React Router v1.0.0
-* Express
-* Webpack
-* Babel
+* React Router v1.0.0-rc1
+* Express v4.13.3
+* Webpack v1.12.1
+* Babel v5.8.23
 
 ### Primary Goals
 * Pay careful attention to create a clearly defined easy to follow file structure.
@@ -30,6 +30,7 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 - [ ] CSS Modules.
 - [ ] Service Proxying with [fetchr](https://github.com/yahoo/fetchr).
 - [ ] React Hot Loading
+- [ ] React Dev Tools
 - [ ] Simple basic deployment script to SSH into a server and run a git pull.
 
 ## To setup
