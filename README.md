@@ -12,16 +12,17 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 * Everything should be consistantly babeled.
 
 ### TODO
-- [ ] Execute all latent dispatch requests before server rendering.
-- [ ] Incorporate [fetchr](https://github.com/yahoo/fetchr).
+- [ ] ~Execute all latent dispatch requests before server rendering.~
+- [ ] Refactor to Redux to solve isomorphic problems
 - [ ] Minification.
 - [ ] Assets / Gzip.
-- [ ] CSS Modules.
 - [ ] Cache server rendered pages in memory.
 
 ### Future goals
 - [ ] Unit tests
 - [ ] Feature tests
+- [ ] CSS Modules.
+- [ ] Service Proxying with [fetchr](https://github.com/yahoo/fetchr).
 - [ ] React Hot Loading
 - [ ] Simple basic deployment script to SSH into a server and run a git pull.
 
