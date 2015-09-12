@@ -22,6 +22,8 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 
 ### TODO
 - [x] Refactor to Redux
+- [ ] Encapsulate Hydration
+- [ ] CSS Modules.
 - [ ] Make pretty / Add content about Redux (any suggestions?)
 - [ ] React Hot Loading
 - [ ] Redux Dev Tools
@@ -33,7 +35,6 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 - [ ] Upgrade to React v0.14
 - [ ] Unit tests
 - [ ] Feature tests
-- [ ] CSS Modules.
 - [ ] Service Proxying
 - [ ] Simple basic deployment script to SSH into a server and run a git pull.
 
