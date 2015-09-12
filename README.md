@@ -2,6 +2,14 @@
 
 Isomorphic React starting package cause the rest of them suck and I wanted to make my own.
 
+### Technology
+* Redux v2.0
+* React v0.13.0
+* React Router v1.0.0
+* Express
+* Webpack
+* Babel
+
 ### Primary Goals
 * Pay careful attention to create a clearly defined easy to follow file structure.
 * Isomorphicize as much as practical.
