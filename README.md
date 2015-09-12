@@ -1,3 +1,5 @@
+_Nothing to see here as of yet. Working on the Redux implementation. Best look elsewhere_
+
 
 # Reactomorph
 
