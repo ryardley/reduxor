@@ -1,4 +1,4 @@
-# Redux-o-morph
+# Redux-o-matic
 
 __A React Router ready, Redux & React Isomorphic starting template for mortals.__
 
@@ -13,16 +13,22 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 * Babel v5.8.23
 
 ### Primary Goals
+* Get the latest packages on npm playing nicely.
 * Pay careful attention to create a clearly defined easy to follow file structure.
 * Isomorphicize as much as practical.
 * Plays nicely as a 12 Factor app. http://12factor.net/
 * Avoid unnecessary global dependencies especially for deployment. _(ie. favour using local .bin, avoid gulp)_
 * Should be low volume production ready launchable via npm start for upstart.
-* Everything should be the same version of ES whatever.
+* Everything should be the same version of ES$#%@.
 
 ### TODO
-- [x] Refactor to Redux to solve isomorphic problems
-- [ ] Make pretty
+- [x] Refactor to Redux
+- [x] Isomorphic Rendering with a service
+- [x] Encapsulate Hydration using [drator](https://www.npmjs.com/package/drator)
+- [ ] Implement [Redux actions](https://github.com/acdlite/redux-actions)
+- [ ] Implement [Redux promise](https://github.com/acdlite/redux-promise)
+- [ ] CSS Modules.
+- [ ] Make pretty / Add content about Redux (any suggestions?)
 - [ ] React Hot Loading
 - [ ] Redux Dev Tools
 - [ ] Minification.
@@ -33,7 +39,6 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 - [ ] Upgrade to React v0.14
 - [ ] Unit tests
 - [ ] Feature tests
-- [ ] CSS Modules.
 - [ ] Service Proxying
 - [ ] Simple basic deployment script to SSH into a server and run a git pull.
 
