@@ -27,6 +27,8 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 - [x] Encapsulate Hydration using [drator](https://www.npmjs.com/package/drator)
 - [x] Implement [Redux actions](https://github.com/acdlite/redux-actions)
 - [x] Implement [Redux promise](https://github.com/acdlite/redux-promise)
+- [ ] Service Proxying and Authentication with passport and [Nector](http://github.com/ryardley/nector)
+- [ ] Login Page with Authenticated resources.
 - [ ] CSS Modules.
 - [ ] Make pretty / Add content about Redux (any suggestions?)
 - [ ] React Hot Loading
@@ -39,7 +41,6 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 - [ ] Upgrade to React v0.14
 - [ ] Unit tests
 - [ ] Feature tests
-- [ ] Service Proxying
 - [ ] Simple basic deployment script to SSH into a server and run a git pull.
 
 ## To setup
