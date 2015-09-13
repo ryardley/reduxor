@@ -2,7 +2,7 @@
 
 import React from 'react';
 import DocumentTitle from 'react-document-title';
-import {fetchFollowers} from '../actions';
+import {createFetchFollowers} from '../actions';
 import store from '../store';
 import {connect} from 'react-redux';
 
@@ -10,8 +10,9 @@ import {connect} from 'react-redux';
 export default class Followers extends React.Component {
 
   static fetchTransitionData() {
-    return store.dispatch(fetchFollowers());
+    return store.dispatch(createFetchFollowers());
   }
+
   componentDidMount(){
     this.constructor.fetchTransitionData();
   }

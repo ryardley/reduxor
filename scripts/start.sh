@@ -10,7 +10,9 @@ start_prod(){
 start_dev(){
   ./node_modules/.bin/link-package ./app app
   # TODO: the followiing is not being killed correctly upon ctrl+c
-  ./node_modules/.bin/nodemon --exec ./node_modules/.bin/babel-node ./app/index.js & webpack-dev-server
+  ./node_modules/.bin/nodemon --exec ./node_modules/.bin/babel-node ./app/index.js & P=$!
+  trap "kill $P" EXIT
+  webpack-dev-server
 }
 
 
