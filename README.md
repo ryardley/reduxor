@@ -31,8 +31,9 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 - [ ] Service Authentication with [Passport](https://github.com/jaredhanson/passport) and [Nector](http://github.com/ryardley/nector)
 - [ ] React Zurb Foundation or Bootstrap
 - [ ] Login Page with Authenticated resources.
-- [ ] React Hot Loading
-- [ ] Redux Dev Tools
+- [ ] Seed data script.
+- [ ] React Hot Loading.
+- [ ] Redux Dev Tools.
 - [ ] Minification.
 - [ ] Assets / Gzip.
 - [ ] Cache server rendered pages in memory.
