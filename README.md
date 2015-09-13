@@ -25,8 +25,8 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 - [x] Refactor to Redux
 - [x] Isomorphic Rendering with a service
 - [x] Encapsulate Hydration using [drator](https://www.npmjs.com/package/drator)
-- [ ] Implement [Redux actions](https://github.com/acdlite/redux-actions)
-- [ ] Implement [Redux promise](https://github.com/acdlite/redux-promise)
+- [x] Implement [Redux actions](https://github.com/acdlite/redux-actions)
+- [x] Implement [Redux promise](https://github.com/acdlite/redux-promise)
 - [ ] CSS Modules.
 - [ ] Make pretty / Add content about Redux (any suggestions?)
 - [ ] React Hot Loading
