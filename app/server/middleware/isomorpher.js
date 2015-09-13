@@ -5,6 +5,7 @@ import Html from '../components/Html';
 import createLocation from 'history/lib/createLocation';
 import DocumentTitle from 'react-document-title';
 import routes from '../../shared/router/routes';
+import {dehydrate} from 'drator';
 import {RoutingContext, match} from 'react-router';
 import store from '../../shared/store';
 import {Provider} from 'react-redux';
@@ -38,7 +39,7 @@ export default function isomorpher(req, res) {
                   {() => <RoutingContext {...renderProps} />}
                 </Provider>
               ),
-              state: 'window.__THIS_IS_MESSY_BUT_IT_WORKS=' + JSON.stringify(store.getState()),
+              state: dehydrate('App', store.getState()),
               title: DocumentTitle.rewind()
             })
           )
