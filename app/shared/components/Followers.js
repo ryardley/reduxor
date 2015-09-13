@@ -2,7 +2,7 @@
 
 import React from 'react';
 import DocumentTitle from 'react-document-title';
-import {createFetchFollowers} from '../actions';
+import {fetchFollowingAction} from '../actions';
 import store from '../store';
 import {connect} from 'react-redux';
 
@@ -10,7 +10,7 @@ import {connect} from 'react-redux';
 export default class Followers extends React.Component {
 
   static fetchTransitionData() {
-    return store.dispatch(createFetchFollowers());
+    return store.dispatch(fetchFollowingAction());
   }
 
   componentDidMount(){
@@ -28,7 +28,7 @@ export default class Followers extends React.Component {
     return (
       <DocumentTitle title='Followers'>
         <div>
-          <h4>Followers</h4>
+          <h4>Github Followers</h4>
           <ul>
             {followers.map(this.renderFollower)}
           </ul>

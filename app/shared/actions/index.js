@@ -1,6 +1,6 @@
 'use strict';
 
 import {createAction} from 'redux-actions';
-import {fetchFollowing} from '../services/followers';
+import {fetchFollowing} from '../services/github';
 
-export const createFetchFollowers = createAction('FETCH_FOLLOWERS', () => fetchFollowing());
+export const fetchFollowingAction = createAction('FETCH_FOLLOWERS', () => fetchFollowing());
