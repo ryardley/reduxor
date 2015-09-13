@@ -24,7 +24,7 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 ### TODO
 - [x] Refactor to Redux
 - [x] Isomorphic Rendering with a service
-- [ ] Encapsulate Hydration
+- [x] Encapsulate Hydration
 - [ ] Implement [Redux actions](https://github.com/acdlite/redux-actions)
 - [ ] Implement [Redux promise](https://github.com/acdlite/redux-promise)
 - [ ] CSS Modules.
