@@ -4,14 +4,15 @@ import config from 'app/config';
 import express from 'express';
 import isomorpher from './middleware/isomorpher';
 import favicon from 'serve-favicon';
+import {nectorExpress} from '../shared/nector';
 
 export default function serve () {
   const app = express();
   const c = config();
 
   app.use(favicon(__dirname + '../../assets/favicon.ico'));
+  app.use(nectorExpress);
   app.use(isomorpher);
-
 
   const server = app.listen(c.port, function () {
     let {host, port} = server.address();
