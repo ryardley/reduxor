@@ -28,7 +28,7 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 - [x] Implement [Redux actions](https://github.com/acdlite/redux-actions)
 - [x] Implement [Redux promise](https://github.com/acdlite/redux-promise)
 - [ ] Service Proxying with [Nector](http://github.com/ryardley/nector)
-- [ ] Service Authentication with passport and Nector
+- [ ] Service Authentication with [Passport](https://github.com/jaredhanson/passport) and [Nector](http://github.com/ryardley/nector)
 - [ ] React Zurb Foundation or Bootstrap
 - [ ] Login Page with Authenticated resources.
 - [ ] React Hot Loading
