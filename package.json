@@ -23,7 +23,7 @@
     "react-router": "^1.0.0-rc1",
     "redux": "^2.0.0",
     "redux-thunk": "^0.1.0",
-    "serve-favicon": "^2.3.0",
+    "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
     "babel": "^5.8.23",
