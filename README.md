@@ -1,6 +1,7 @@
 # Reduxor
-_Currently under development probably doesnt work until this disclaimer is gone_
 __A React Router ready, Redux & React Isomorphic starting template for mortals.__
+
+_Currently under development probably doesnt work until this disclaimer is gone_
 
 Isomorphic React starting package cause the rest of them suck and I wanted to make my own with the latest packages.
 
