@@ -2,17 +2,16 @@
 
 # DEFINE FUNCTIONS
 
+BINF=./node_modules/.bin
+
 start_prod(){
-  ./node_modules/.bin/link-package ./.srv src
+  ${BINF}/link-package ./.srv src
   node ./.srv/index.js
 }
 
 start_dev(){
-  ./node_modules/.bin/link-package ./src src
-  # TODO: the followiing is not being killed correctly upon ctrl+c
-  ./node_modules/.bin/nodemon --exec ./node_modules/.bin/babel-node ./src/index.js & P=$!
-  trap "kill $P" EXIT
-  webpack-dev-server
+  ${BINF}/link-package ./src src
+  ${BINF}/concurrent "${BINF}/nodemon --exec ${BINF}/babel-node ./src/index.js" "webpack-dev-server"
 }
 
 
