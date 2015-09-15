@@ -1,6 +1,6 @@
 'use strict';
 
-import config from 'app/config';
+import config from '../config';
 import express from 'express';
 import isomorpher from './middleware/isomorpher';
 import services from './middleware/services';

@@ -1,4 +1,4 @@
-# Redux-o-matic
+# Reduxor
 
 __A React Router ready, Redux & React Isomorphic starting template for mortals.__
 
