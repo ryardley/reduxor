@@ -1,6 +1,10 @@
 'use strict';
 
 import {createAction} from 'redux-actions';
-import {fetchFollowing} from '../services/github';
+import {createClient} from '../nector';
 
-export const fetchFollowingAction = createAction('FETCH_FOLLOWERS', () => fetchFollowing());
+const client = createClient('http://localhost:3181');
+
+export const fetchFollowingAction = createAction('FETCH_FOLLOWERS', () => {
+  return client('fetchFollowing')();
+});
