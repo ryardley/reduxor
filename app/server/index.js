@@ -3,6 +3,7 @@
 import config from 'app/config';
 import express from 'express';
 import isomorpher from './middleware/isomorpher';
+import services from './middleware/services';
 import favicon from 'serve-favicon';
 
 export default function serve () {
@@ -10,8 +11,8 @@ export default function serve () {
   const c = config();
 
   app.use(favicon(__dirname + '../../assets/favicon.ico'));
+  services(app);
   app.use(isomorpher);
-
 
   const server = app.listen(c.port, function () {
     let {host, port} = server.address();
