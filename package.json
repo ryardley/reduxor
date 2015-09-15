@@ -1,6 +1,6 @@
 {
-  "name": "redux-o-morph",
-  "version": "1.0.0",
+  "name": "reduxor",
+  "version": "0.0.1",
   "description": "Redux-o-morph",
   "repository": "https://github.com/ryardley/reactomorph",
   "scripts": {
