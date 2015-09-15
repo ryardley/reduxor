@@ -9,7 +9,7 @@ export default function(server){
           if (response.status >= 400) {
             throw new Error('Bad response from server');
           }
-          return response.text();
+          return response.json();
         });
     }
   }, server);
