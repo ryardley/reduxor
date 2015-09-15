@@ -1,5 +1,5 @@
 import server from './server';
 import dotenv from 'dotenv';
 
-dotenv.load();
+dotenv.config({silent: true});
 server();

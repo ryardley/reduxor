@@ -3,7 +3,7 @@
 import config from '../config';
 import express from 'express';
 import isomorpher from './middleware/isomorpher';
-import services from './middleware/services';
+import nector from './middleware/nector';
 import favicon from 'serve-favicon';
 
 export default function serve () {
@@ -11,7 +11,7 @@ export default function serve () {
   const c = config();
 
   app.use(favicon(__dirname + '../../assets/favicon.ico'));
-  services(app);
+  app.use(nector);
   app.use(isomorpher);
 
   const server = app.listen(c.port, function () {

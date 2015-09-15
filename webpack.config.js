@@ -4,7 +4,10 @@ var path = require('path');
 
 module.exports = {
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx'],
+    alias: {
+      express: path.resolve(__dirname, 'src', 'client', 'express')
+    }
   },
   context: path.resolve(__dirname, 'src'),
   entry: './client',
@@ -23,6 +26,7 @@ module.exports = {
       {test: /\.json$/, loader: 'json-loader'}
     ]
   },
+
   stats: {
     colors: true
   },
