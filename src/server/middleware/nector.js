@@ -1,5 +1,5 @@
 import fetch from 'isomorphic-fetch';
-import nector from '../../shared/nector';
+import nector from 'app/nector';
 
 export default nector.createServer({
   fetchFollowing(){

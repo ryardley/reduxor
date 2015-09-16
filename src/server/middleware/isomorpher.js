@@ -4,10 +4,10 @@ import React from 'react';
 import Html from '../components/Html';
 import createLocation from 'history/lib/createLocation';
 import DocumentTitle from 'react-document-title';
-import routes from '../../shared/router/routes';
+import routes from 'app/router/routes';
 import {dehydrate} from 'drator';
 import {RoutingContext, match} from 'react-router';
-import store from '../../shared/store';
+import store from 'app/store';
 import {Provider} from 'react-redux';
 
 export default function isomorpher(req, res) {

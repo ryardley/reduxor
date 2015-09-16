@@ -6,7 +6,7 @@ import isomorpher from './middleware/isomorpher';
 import nector from './middleware/nector';
 import favicon from 'serve-favicon';
 
-export default function serve () {
+export default function serve() {
   const app = express();
   const c = config();
 

@@ -5,12 +5,12 @@
 BINF=./node_modules/.bin
 
 start_prod(){
-  ${BINF}/link-package ./.srv src
+  ${BINF}/babel-node ./.srv/setupLinks.js
   node ./.srv/index.js
 }
 
 start_dev(){
-  ${BINF}/link-package ./src src
+  ${BINF}/babel-node ./src/setupLinks.js
   ${BINF}/concurrent "${BINF}/nodemon --exec ${BINF}/babel-node ./src/index.js" "webpack-dev-server"
 }
 
