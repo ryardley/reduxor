@@ -16,7 +16,7 @@ My goal here is to write a sane isomorphic starter with minimal complexity and s
 * Babel v5.8.23
 
 ### Primary Goals
-* Sane easily grockable code base.
+* Simple, transparent, sane easily grockable code base.
 * Minimal complexity.
 * Use the latest packages.
 * Isomorphicize as much as practical.
