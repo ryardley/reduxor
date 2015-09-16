@@ -5,7 +5,7 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 
 I see a whole lot of webpack react and flux projects that are a total sack of spaghetti. They mix concerns they add unnecessary dependencies, they use ugly global flags and 6 different types of configuration as they copy and paste code from starter after starter.
 
-My goal here is to write a sane isomorphic starter with minimal complexity and sane technical decisions that should not cause headaches as your app grows.
+My goal here is to write a sane isomorphic starter with minimal complexity and sane technical decisions that should not cause you headaches as you understand the cruft that adding library after library does to your codebase as your app grows.
 
 ### Technology
 * Redux v2.0
