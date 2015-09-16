@@ -16,10 +16,11 @@ My goal here is to write a sane isomorphic starter with minimal complexity and s
 * Babel v5.8.23
 
 ### Primary Goals
-* Simple, transparent, sane easily grockable code base.
+* Simple, transparent, sane, easily grockable code base.
+* Latest default package versions on npm.
 * Minimal complexity.
-* Use the latest packages.
-* Isomorphicize as much as practical.
+* Minimal dependencies. 
+* Isomorphicize as much as practical as transparently as possible.
 * Use env vars for configuration so it plays nicely as a 12 Factor app. http://12factor.net/
 * Avoid unnecessary global dependencies especially for deployment. _(ie. favour using local .bin, avoid gulp)_
 * Everything should be the same version of ES whatever.
