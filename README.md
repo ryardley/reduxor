@@ -1,7 +1,11 @@
 # Reduxor
-__A React Router ready, Redux & React Isomorphic starting template for mortals.__
+__A React Router ready, Redux & React Isomorphic starting template for your sanity.__
 
 Isomorphic React starting package cause the rest of them suck and I wanted to make my own with the latest packages.
+
+I see a whole lot of webpack react and flux projects that are a total sack of spaghetti. They mix concerns they add unnecessary dependencies, they use ugly global flags and 6 different types of configuration as they copy and paste code from starter after starter.
+
+My goal here is to write a sane isomorphic starter with minimal complexity and sane technical decisions that should not cause headaches as your app grows.
 
 ### Technology
 * Redux v2.0
@@ -12,13 +16,13 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 * Babel v5.8.23
 
 ### Primary Goals
-* Get the latest packages on npm playing nicely.
-* Pay careful attention to create a clearly defined easy to follow file structure.
+* Sane easily grockable code base.
+* Minimal complexity.
+* Use the latest packages.
 * Isomorphicize as much as practical.
-* Plays nicely as a 12 Factor app. http://12factor.net/
+* Use env vars for configuration so it plays nicely as a 12 Factor app. http://12factor.net/
 * Avoid unnecessary global dependencies especially for deployment. _(ie. favour using local .bin, avoid gulp)_
-* Should be low volume production ready launchable via npm start for upstart.
-* Everything should be the same version of ES$#%@.
+* Everything should be the same version of ES whatever.
 
 ### TODO
 - [x] Refactor to Redux
