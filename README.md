@@ -31,6 +31,10 @@ My goal here is to write a sane isomorphic starter with minimal complexity and s
 - [x] Implement [Redux actions](https://github.com/acdlite/redux-actions)
 - [x] Implement [Redux promise](https://github.com/acdlite/redux-promise)
 - [x] Service Proxying with [Nector](http://github.com/ryardley/nector)
+- [ ] Unit tests
+- [ ] Feature tests
+- [ ] Implement promise based actions. [Something like this](https://github.com/erikras/react-redux-universal-hot-example/blob/master/src/redux/middleware/clientMiddleware.js)
+- [ ] Remove mock express from client
 - [ ] Service Authentication with [Passport](https://github.com/jaredhanson/passport) and [Nector](http://github.com/ryardley/nector)
 - [ ] React Zurb Foundation or Bootstrap
 - [ ] Login Page with Authenticated resources.
@@ -44,8 +48,7 @@ My goal here is to write a sane isomorphic starter with minimal complexity and s
 ### Future goals
 - [ ] CSS Modules.
 - [ ] Upgrade to React v0.14
-- [ ] Unit tests
-- [ ] Feature tests
+
 - [ ] Simple basic deployment script to SSH into a server and run a git pull.
 
 ## To setup
