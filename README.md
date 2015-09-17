@@ -19,7 +19,7 @@ My goal here is to write a sane isomorphic starter with minimal complexity and s
 * Simple, transparent, sane, easily grockable code base.
 * Latest default package versions on npm.
 * Minimal complexity.
-* Minimal dependencies. 
+* Minimal dependencies.
 * Isomorphicize as much as practical as transparently as possible.
 * Use env vars for configuration so it plays nicely as a 12 Factor app. http://12factor.net/
 * Avoid unnecessary global dependencies especially for deployment. _(ie. favour using local .bin, avoid gulp)_
@@ -36,6 +36,8 @@ My goal here is to write a sane isomorphic starter with minimal complexity and s
 - [ ] Feature tests
 - [ ] Implement promise based actions. [Something like this](https://github.com/erikras/react-redux-universal-hot-example/blob/master/src/redux/middleware/clientMiddleware.js)
 - [ ] Remove mock express from client
+- [ ] Refactor for modularity.
+- [ ] Separate out views from components.
 - [ ] Service Authentication with [Passport](https://github.com/jaredhanson/passport) and [Nector](http://github.com/ryardley/nector)
 - [ ] React Zurb Foundation or Bootstrap
 - [ ] Login Page with Authenticated resources.
