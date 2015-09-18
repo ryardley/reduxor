@@ -39,6 +39,7 @@ My goal here is to write a sane isomorphic starter with minimal complexity and s
 - [ ] Refactor for modularity.
 - [ ] Separate out views from components.
 - [ ] Service Authentication with [Passport](https://github.com/jaredhanson/passport) and [Nector](http://github.com/ryardley/nector)
+- [ ] Task based authorization within Nector
 - [ ] React Zurb Foundation or Bootstrap
 - [ ] Login Page with Authenticated resources.
 - [ ] Seed data script.
