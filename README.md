@@ -32,8 +32,8 @@ My goal here is to write a sane isomorphic starter with minimal complexity and s
 - [x] Implement [Redux actions](https://github.com/acdlite/redux-actions)
 - [x] Implement [Redux promise](https://github.com/acdlite/redux-promise)
 - [x] Service Proxying with [Nector](http://github.com/ryardley/nector)
-- [ ] Unit tests
-- [ ] Feature tests
+- [x] Unit tests example
+- [x] Feature tests example
 - [ ] Implement promise based actions. [Something like this](https://github.com/erikras/react-redux-universal-hot-example/blob/master/src/redux/middleware/clientMiddleware.js)
 - [ ] Remove mock express from client
 - [ ] Refactor for modularity.

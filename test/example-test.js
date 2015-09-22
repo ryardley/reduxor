@@ -1,3 +1,5 @@
+/*eslint-env node, mocha */
+
 import {expect} from 'chai';
 
 describe('tests', () => {
