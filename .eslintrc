@@ -16,7 +16,8 @@
   "env": {
     "es6": true,
     "node": true,
-    "browser": true
+    "browser": true,
+    "test": true
   },
   "extends": "eslint:recommended",
   "ecmaFeatures": {
