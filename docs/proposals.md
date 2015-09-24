@@ -43,7 +43,9 @@ Currently the format provided is similar to most Flux-type architectures and onl
     │       ├── modules
     │       │   └── navButton
     │       │       ├── actions
+    │       │       │   └── changeColor.js
     │       │       ├── reducers
+    │       │       │   └── changeColor.js
     │       │       └── views
     │       │           └── NavigationButton
     │       │               └── index.js
@@ -60,3 +62,24 @@ Currently the format provided is similar to most Flux-type architectures and onl
         ├── rootActions.js
         └── rootReducer.js
 ```
+
+
+### Importing sub packages. 
+All sub packages are autoloaded and are available on upstream packages. 
+
+```javascript
+// within a view in app/modules/auth/views/Login/index.js
+import {actions} from '../..';
+// actions: {loadAuth:[Function],login:[Function],logout:[Function]}
+dispatch(actions.loadAuth())
+```
+
+### Flatten fractal dependencies. 
+
+```javascript
+// within a view in app/modules/navigation/views/Nav/index.js
+import {actions} from '../..';
+// actions: {navigate:[Function], changeColor:[Function]}
+dispatch(actions.changeColor())
+```
+
