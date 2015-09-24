@@ -3,7 +3,7 @@
 ## Refactor for modularity.
 Currently the format provided is similar to most Flux-type architectures and only assumes the most basic of application considerations. In the real world scalable applications are modular and need to be structured in a modular way. As a consequence of the lack of scalability the structure of reduxor will be as follows:
 
-### Potential fractal modularity. 
+### Potential fractal structure. 
 
 ```
 .
@@ -42,6 +42,8 @@ Currently the format provided is similar to most Flux-type architectures and onl
     │       ├── index.js
     │       ├── modules
     │       │   └── navButton
+    │       │       ├── actions
+    │       │       ├── reducers
     │       │       └── views
     │       │           └── NavigationButton
     │       │               └── index.js
