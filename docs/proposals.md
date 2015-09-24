@@ -83,3 +83,4 @@ import {actions} from '../..';
 dispatch(actions.changeColor())
 ```
 
+Errors will be thrown on name collisions
