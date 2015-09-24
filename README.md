@@ -25,7 +25,7 @@ My goal here is to write a sane isomorphic starter with minimal complexity and s
 * Avoid unnecessary global dependencies especially for deployment. _(ie. favour using local .bin, avoid gulp)_
 * Everything should be the same version of ES whatever.
 
-### TODO
+### TODO (Yep this is a work in progress)
 - [x] Refactor to Redux
 - [x] Isomorphic Rendering with a service
 - [x] Encapsulate Hydration using [Drator](https://www.npmjs.com/package/drator)
