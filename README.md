@@ -71,7 +71,7 @@ The start in development mode
 $ npm start
 ```
 
-Then shoot over to [http://localhost:3000/](http://localhost:3000/) to be amazed at the awesomeness.
+Then shoot over to [http://localhost:3000/](http://localhost:3000/) to be amazed at the awesomeness. (_Actually it is pretty crap right now tehehe but it should be enough to get you going hehehe..._)
 
 ## To run in production
 The start in production mode
