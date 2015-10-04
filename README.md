@@ -7,7 +7,7 @@ I see a whole lot of webpack react and flux projects that are a total sack of sp
 
 My goal here is to write a sane isomorphic starter with minimal complexity and sane technical decisions that should not cause you headaches as you understand the cruft that adding library after library does to your codebase as your app grows.
 
-_This will be changing I have developed new ideas around this I will be sharing once I finish my current project. I will share quite a comprehensive template for working with redux soon!_
+_NOTE: This will be changing I have developed new ideas around this I will be sharing once I finish my current project. I will share quite a comprehensive template for working with redux soon!_
 
 ### Technology
 * Redux v2.0
