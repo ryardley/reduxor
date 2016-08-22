@@ -1,3 +1,5 @@
+_NOTE: Ok life got int he way here. I will be creating a new template and incorporating indexr as part of the workflow here but it may take some time._
+
 # Reduxor
 __A React Router ready, Redux & React Isomorphic starting template for your sanity.__
 
@@ -6,8 +8,6 @@ Isomorphic React starting package cause the rest of them suck and I wanted to ma
 I see a whole lot of webpack react and flux projects that are a total sack of spaghetti. They mix concerns they add unnecessary dependencies, they use ugly global flags and 6 different types of configuration as they copy and paste code from starter after starter.
 
 My goal here is to write a sane isomorphic starter with minimal complexity and sane technical decisions that should not cause you headaches as you understand the cruft that adding library after library does to your codebase as your app grows.
-
-_NOTE: This works but is currently incomplete and will be changing quite a bit I have also developed some new ideas around this. Once I finish my current project, I will share quite a comprehensive template for working with redux that includes login and authorization._
 
 ### Technology
 * Redux v2.0
