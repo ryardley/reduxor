@@ -40,7 +40,8 @@
     "mocha": "^2.3.3",
     "nodemon": "^1.4.1",
     "redux-devtools": "^2.1.0",
-    "webpack": "^1.12.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2",
     "zombie": "^4.0.8"
   }
 }

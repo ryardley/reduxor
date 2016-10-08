@@ -14,10 +14,8 @@ start_dev(){
   ${BINF}/concurrent "${BINF}/nodemon --exec ${BINF}/babel-node ./src/index.js" "webpack-dev-server"
 }
 
-
 # RUN NOW
 case "$NODE_ENV" in
   production)   start_prod   ;;
            *)   start_dev    ;;
 esac
-
